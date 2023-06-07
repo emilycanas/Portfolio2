@@ -1,6 +1,8 @@
 import React from "react";
 import { Container,Row,Col } from "react-bootstrap";
 import Boat from '../assets/boat.png'
+import {AiFillLinkedin, AiFillMail} from 'react-icons/ai'
+
 
 
 function Footer(){
@@ -21,10 +23,19 @@ function Footer(){
               
                         </Col>
                         <Col>
-                            <p id='subheading'> email</p>
-                            <p>emilycanasdev@gmail.com</p>
-                            <p id='subheading'>linkedin</p>
-                            <p>linkedin.com/in/emily-canas/</p>
+                            <a 
+                                href = "mailto:emilycanasdev@gmail.com"> 
+                                <h2><AiFillMail/> </h2> 
+                            </a>
+                            <p> emilycanasdev@gmail.com</p> 
+                            <a
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            href="https://www.linkedin.com/in/emily-canas/"
+                            >
+                                <h2><AiFillLinkedin/></h2>
+                            </a>
+                            <p>linkedin.com/in/emily-canas/</p>                         
                         </Col>
                     </Row>   
                 </Col>

@@ -23,6 +23,16 @@ function App() {
         name = 'Carte'
         element = {<Pages.Carte/>}
       ></Route>
+      <Route
+        exact path = '/about'
+        name = 'About'
+        element = {<Pages.About/>}
+      ></Route>
+        <Route
+        exact path = '/contact'
+        name = 'Contace'
+        element = {<Pages.Contact/>}
+      ></Route>
     </Routes>
     </>
   );

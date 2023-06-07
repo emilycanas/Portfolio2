@@ -110,7 +110,19 @@ p{
   bottom: 0;
   /* left: 0; */
 }
+.white-color{
+  color:#ebebeb;
+}
+.blue-bk{
+  background-color: #1F79A6;
+}
 
+.green-bk{
+  background-color: #727958;
+}
+.invisible-text{
+  text-indent: -999px;
+}
 @media only screen and (max-width: 577px){
   #sm-screen{
     display:none

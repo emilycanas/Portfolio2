@@ -70,7 +70,11 @@ function Home(){
                 <div className='p-3'>
                     <p id='secondary-title-font'>ABOUT ME</p>
                     <p> Hello! I'm Emily, a frontend developer based in the Netherlands. I specialize in bringing ideas to life. I am committed to creating intuitive and responsive websites that engage users from the moment they land on a page. </p>
-                    <p id = 'bolded-subheading'> —get to know me→</p>
+                    <Link
+                    to = '/about' className='custom-link'>
+                        <p id = 'bolded-subheading'> get to know me →</p>
+
+                    </Link>
                 </div>
                 </Col>
                 <Col className='col-lg-4 col-sm-5 col-md-6 col-5 order-sm-1 order-lg-2 order-md-2 order-1'>

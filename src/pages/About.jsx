@@ -2,15 +2,15 @@ import React from "react";
 import TopNav from "../components/TopNav";
 import Footer from "../components/Footer";
 
-function Carte(){
+function About(){
     return(
         <>
-        <TopNav/>
-        <h1> This will be the Carte Page</h1>
-        <Footer/>
+        <TopNav></TopNav>
+        <h1> This is the about page</h1>
+        <Footer></Footer>
+
         </>
     )
-
 }
 
-export default Carte;
+export default About;

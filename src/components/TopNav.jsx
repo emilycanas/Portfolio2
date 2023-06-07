@@ -38,16 +38,16 @@ function TopNav(){
               
                 <Nav className="me-auto navlink">
                   <Nav.Link href="/">
-                    <p>work</p>
+                    <p> work |</p>
                   </Nav.Link>
                   <Nav.Link href="/about">
-                    <p>about</p>
+                    <p> about |</p>
                   </Nav.Link>
                   {/* <Nav.Link href = "/resume">
                     Resume
                   </Nav.Link> */}
                   <Nav.Link href="/contact">
-                   <p> contact</p>
+                   <p> contact </p>
                   </Nav.Link>
                 </Nav>
               </Col>
