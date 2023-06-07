@@ -1,0 +1,21 @@
+.navlink {
+    /* position:sticky; */
+    /* right: 0; */
+    /* margin-left: 300%; */
+    float:right;
+    margin-right: 2%;
+    text-align: right;
+    justify-content: right;
+    justify-items: right;
+    align-items: right;
+}
+
+.navbar-custom{
+    background-color: #987716
+}
+
+.worldimg{
+    /* height:20%; */
+    max-height: 300px
+
+}
