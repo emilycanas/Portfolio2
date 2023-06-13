@@ -4,9 +4,6 @@
     font-style: normal;
     font-weight: 100;
 }
-.bg_color{
-    background-color: #EDECED;
-}
 
 .paddingtop{
     padding-top: 3%;
@@ -33,11 +30,6 @@
     align-items:flex-end   
 }
 
-.center{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
 
 .padding{
     padding: 5%;
@@ -57,9 +49,6 @@
     background-color: #1F79A6;
 }
 
-.brown_bgcolor{
-   background-color: #987716;
-}
 
 
 .background_img{
@@ -123,9 +112,7 @@ body{
     max-height: min-content; 
 }
 
-.max-width{
-    max-width: 100%;
-}
+
 
 .custom-container{
     /* width: 100%;

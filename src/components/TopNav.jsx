@@ -16,6 +16,7 @@ function TopNav(){
             width = '100%'
             // height='100%'
             className="worldimg"
+            loading = 'lazy'
             >
             </img>
             <Navbar  width = '100%' className="navbar-custom" >
@@ -38,7 +39,7 @@ function TopNav(){
               
                 <Nav className="me-auto navlink">
                   <Nav.Link href="/">
-                    <p> work |</p>
+                    <p> home |</p>
                   </Nav.Link>
                   <Nav.Link href="/about">
                     <p> about |</p>

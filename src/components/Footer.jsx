@@ -18,24 +18,26 @@ function Footer(){
                         </Col>
                     </Row>
 
-                    <Row className='padding footertext '>
+                    <Row className=' white-color '>
+                  
                         <Col>
-              
-                        </Col>
-                        <Col>
-                            <a 
-                                href = "mailto:emilycanasdev@gmail.com"> 
-                                <h2><AiFillMail/> </h2> 
-                            </a>
-                            <p> emilycanasdev@gmail.com</p> 
+                            <div className="grid-container">
+                                <a 
+                                    href = "mailto:emilycanasdev@gmail.com"> 
+                                    <p className="black-color"><AiFillMail/> </p> 
+                                </a>
+                                <p>emilycanasdev@gmail.com</p> 
+                            </div>
+                            <div className="grid-container">
                             <a
                             target="_blank" 
                             rel="noopener noreferrer" 
                             href="https://www.linkedin.com/in/emily-canas/"
                             >
-                                <h2><AiFillLinkedin/></h2>
+                                <p className="black-color"><AiFillLinkedin/></p>
                             </a>
-                            <p>linkedin.com/in/emily-canas/</p>                         
+                            <p>linkedin.com/in/emily-canas/</p>     
+                            </div>                    
                         </Col>
                     </Row>   
                 </Col>
@@ -44,7 +46,9 @@ function Footer(){
                     src = {Boat}
                     alt = 'GetInTouch'
                     height= '100%'
-                    width = '100%'/>
+                    width = '100%'
+                    loading = 'lazy'
+                    />
                 </Col>
             </Row>
         </Container>

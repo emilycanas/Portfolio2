@@ -1,8 +1,10 @@
-import Home from './Home'
-import Gems from './Gems'
-import Carte from './Carte'
-import About from './About'
-import Contact from './Contact'
+import React from 'react'
+
+const Home = React.lazy(() => import('./Home'))
+const Gems = React.lazy(() => import('./Gems'))
+const Carte = React.lazy(() => import('./Carte'))
+const About = React.lazy(() => import('./About'))
+const Contact = React.lazy(() => import('./Contact'))
 
 
 const exports = {
@@ -10,8 +12,7 @@ const exports = {
     Gems,
     Carte,
     About,
-    Contact,
-   
+    Contact,  
 }
 
 export default exports

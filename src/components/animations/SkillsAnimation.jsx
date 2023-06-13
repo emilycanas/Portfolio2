@@ -4,30 +4,52 @@ import './skillsanimation.css'
 function SkillsAnimation(){
   return(
     <>
-    <section className="animation-container">
+    <section className="animation-container brown_bgcolor">
       <div className="list">
         <div className="item">
-          <span className="item-txt">CREATIVE</span>
+   
+            <span id = 'fourth-title-font'>CREATIVE</span>
+
+
+ 
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>
-          <span className="item-txt">DETAIL ORIENTED</span>
+    
+            <span id = 'fourth-title-font'>DETAIL ORIENTED</span>
+
+
+   
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>
-          <span className="item-txt">COLLABORATIVE</span>
+      
+          <span id = 'fourth-title-font'>COLLABORATIVE</span>
+            
+        
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>
-          <span className="item-txt">ADAPTABLE</span>
+    
+          <span id = 'fourth-title-font'>ADAPTABLE</span>
+     
+        
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>
-          <span className="item-txt">LIFE LONG LEARNER</span>
+   
+          <span id = 'fourth-title-font'>LIFE LONG LEARNER</span>
+
+     
+         
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>
-          <span className="item-txt">& MORE</span>
+     
+          <span id = 'fourth-title-font'>& MORE</span>
+
+     
+        
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>
@@ -36,27 +58,36 @@ function SkillsAnimation(){
 
       <div className="list">
         <div className="item">
-          <span className="item-txt">CREATIVE</span>
+
+          <span id = 'fourth-title-font'>CREATIVE</span>
+
+     
+        
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>
-          <span className="item-txt">DETAIL ORIENTED</span>
+    
+          <span id = 'fourth-title-font'>DETAIL ORIENTED</span>
+
+         
+          
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>
-          <span className="item-txt">COLLABORATIVE</span>
+       
+          <span id = 'fourth-title-font'>COLLABORATIVE</span>
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>
-          <span className="item-txt">ADAPTABLE</span>
+          <span id = 'fourth-title-font'>ADAPTABLE</span>
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>
-          <span className="item-txt">LIFE LONG LEARNER</span>
+          <span id = 'fourth-title-font'>LIFE LONG LEARNER</span>
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>
-          <span className="item-txt">& MORE</span>
+          <span id = 'fourth-title-font'>& MORE</span>
           <span className="item-d">
             <p className="item-dot dot-b"></p>
           </span>

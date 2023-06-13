@@ -25,11 +25,14 @@ function Gems() {
       <div className="bg_color">
         <div className="wrairbkimg">
             <Container>
-            <p className="gemstitle" id = 'tertiary-title-font'>
-                Gains in the Education of Mathematics & Science
+            <p className="gemstitle" id = 'secondary-title-font'>
+              G.E.M.S.
+              {/* Gains in the Education of Mathematics and Science */}
             </p>
             </Container>
         </div>
+
+
    
       <Container >
         <hr />
@@ -39,9 +42,12 @@ function Gems() {
           <Col><h1><SiCanva /></h1></Col>
         </Row>
         <hr />
+        <p className="" id = 'heading'>Gains in the Education of Mathematics and Science</p>
+
         <Row>
           <Col>
-            <p className="" id = 'heading'>Science Education Intern</p>
+
+            {/* <p className="" id = 'heading'>Science Education Intern</p> */}
            
            
             <p className="tab bold oblique " id="subheading">Role: </p>

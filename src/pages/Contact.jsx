@@ -48,21 +48,18 @@ function Contact() {
               </Row>
             </Col>
             <Col>
-              <img src={Boat} alt="GetInTouch" height="100%" width="100%" />
+              <img src={Boat} alt="GetInTouch" height="100%" width="100%" loading = 'lazy' />
             </Col>
           </Row>
         </Container>
         
       </div>
      
-      <div className="green-bk invisible-text mt-5">
+      {/* <div className="green-bk invisible-text mt-5">
         <p>
         this is a square
         </p>
-      </div>
-
-
-      <Back></Back>
+      </div> */} 
     </>
   );
 }

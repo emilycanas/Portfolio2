@@ -5,7 +5,7 @@ import Bird from '../assets/bird.jpg'
 import Dots from '../assets/dots.png'
 import TopNav from '../components/TopNav'
 import Headshot from '../assets/color_headshot.png'
-import CarteLogo from '../assets/carte_logo_bk.png'
+//import CarteLogo from '../assets/carte_logo_bk.png'
 import CarteFood from '../assets/carte_food.png'
 import Gems from '../assets/gems_logo.png'
 //import CodingImg from '../assets/coding_bg.png'
@@ -19,6 +19,7 @@ import Footer from '../components/Footer'
 function Home(){
     return(
     <>
+    
     <div className = "bg_color">
     <TopNav></TopNav>
         
@@ -34,6 +35,7 @@ function Home(){
                     height = "100%"
                     width = "100%"
                     className='birdimg'
+                    loading = 'lazy'
 
                 ></img>
             </Col>
@@ -54,7 +56,7 @@ function Home(){
                     height = "100%"
                     width = "100%"
                     className='birdimg'
-                   
+                    loading = 'lazy'
                 ></img>
             </Col>
         </Row>
@@ -83,7 +85,7 @@ function Home(){
                         alt = "headshot"
                         width= '75%'
                         height = '100%'
-
+                        loading = 'lazy'
                     ></img>
                 </Col>
             </Row>
@@ -105,19 +107,21 @@ function Home(){
                 
                 <Col className='col-8'>
                     <div className='card'>
-                        <img
+                        {/* Uncomment this code if you would like an image overlay on hover
+                            <img
                             src = {CarteLogo}
                             alt = "Carte Front"
                             height = "100%"
                             width= '100%'
                             className='img-top bg_color'
                             
-                        />
+                        /> */}
                          <img
                             src = {CarteFood}
                             alt = "Carte Back"
                             height = "100%"
                             width= '100%'
+                            loading = 'lazy'
                             
                         />
                         
@@ -144,7 +148,9 @@ function Home(){
                             className = 'border_radius'
                             alt = "GemsImg"
                             width = '100%'
-                            height = '100%'/>
+                            height = '100%'
+                            loading = 'lazy'
+                            />
                         <div className='floatright'>
                             <p> 2021 - Data Analysis</p>
                             <Link
@@ -159,29 +165,6 @@ function Home(){
           
         </Container>
         {/* <hr/> */}
-
-    {/* <div className = 'background_img'> */}
-        {/* Resume */}
-        {/* <Container className='padding'>
-            <Row>
-                <Col>
-                <img
-                src = {CodingImg}
-                alt = 'codingimg'
-                width = '100%'
-                height = '100%'
-                />
-    
-                </Col>
-                <Col>
-                    <p id='secondary-title-font'> EXPERIENCE</p>
-                    <p className='medtitlefont'> Full Stack Developer </p>               
-                </Col>
-            </Row>
-        </Container> */}
-    {/* </div>   */}
-   
-   
 
     {/* Contact */}
     <Footer></Footer>
