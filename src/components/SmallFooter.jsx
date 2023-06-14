@@ -13,7 +13,7 @@ function SmallFooter(){
 
         <div className='brown_bgcolor'>
         <Container>
-            <Row className='center2 '>
+            <Row className='center'>
                 <Col className='col-8'>
                     <p id='secondary-title-font' className='footertext'> GET IN TOUCH</p>
                 </Col>

@@ -24,7 +24,6 @@ function Home(){
     <TopNav></TopNav>
         
         {/* First Page */}
-
         <div className='custom-container'>
       
         <Row className='max-height max-width pb-2 mb-3'>
@@ -36,7 +35,6 @@ function Home(){
                     width = "100%"
                     className='birdimg'
                     loading = 'lazy'
-
                 ></img>
             </Col>
             <Col className='bottom-container col-6 col-sm-5'>
@@ -90,8 +88,11 @@ function Home(){
                 </Col>
             </Row>
         </div>
-
-        <SkillsAnimation></SkillsAnimation>
+        
+        <div className='pt-5 pb-5'>
+            <SkillsAnimation></SkillsAnimation>
+        </div>
+        
 
         {/* Carte */}
         <Container >
@@ -106,16 +107,6 @@ function Home(){
                 </Col>
                 
                 <Col className='col-8'>
-                    <div className='card'>
-                        {/* Uncomment this code if you would like an image overlay on hover
-                            <img
-                            src = {CarteLogo}
-                            alt = "Carte Front"
-                            height = "100%"
-                            width= '100%'
-                            className='img-top bg_color'
-                            
-                        /> */}
                          <img
                             src = {CarteFood}
                             alt = "Carte Back"
@@ -124,8 +115,6 @@ function Home(){
                             loading = 'lazy'
                             
                         />
-                        
-                    </div>
                     <div className='floatright'>
                             <p> 2022 - A digital menu and ordering platform</p>
                             

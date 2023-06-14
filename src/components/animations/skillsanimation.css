@@ -9,7 +9,7 @@
     display: flex;
     align-items: top;
     -webkit-animation: loop 40s infinite linear;
-    animation: loop 60s infinite linear;
+    animation: loop 100s infinite linear;
   }
   
   .item-txt{

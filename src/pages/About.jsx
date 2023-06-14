@@ -15,12 +15,12 @@ function About() {
       <div className="bg_color">
         <TopNav></TopNav>
 
-        <div className="center">
+        <div className="center mt-5">
           <p id="title-font"> Emily Canas</p>
      
         </div>
 
-        <Container className="mb-5">
+        <Container className="mb-1">
           <Row className=" max-width  center-in-page">
             <Col className="p-5 col-8">
               <p>{" "}<b>Hi there! <MdWavingHand /></b>{" "}</p>
@@ -40,35 +40,13 @@ function About() {
           </Row>
         </Container>
 
-        <Container className="pb-5">
-          <Row className="center-in-page pt-5 pb-5  max-width">
-            <Col className="pt-1 pb-1" >
-              <p className="fw-bold">when not coding →</p>
-            </Col>
-            <Col
-              className="blue-bk white-color center m-3 p-5 rounded"
-              id="text"
-            >
-              <p> I enjoy </p>
-              <hr />
-              <p id="bolded-subheading"> creating, cardio, & coffee</p>
-              <hr />
-              <p id="">
-                {" "}
-                I spend my free time exploring mediums for creating art,
-                running/hiking, and sipping on a cappuccino or iced coffee{" "}
-              </p>
-            </Col>
-          </Row>
-        </Container>
 
         <Container>
           <Row className="center-in-page pt-5 max-width">
-            {/* <p id = "tertiary-title-font"> fun facts:</p> */}
-            <p className="fw-bold"> fun facts:</p>
-
+            {/* <p className="fw-bold"> fun facts:</p> */}
+            <p id = 'secondary-title-font'> fun facts:</p>
           </Row>
-          <Row className="center center-in-page pb-5 m-2 p max-width ">
+          <Row className="center center-in-page pb-3 m-2 max-width ">
             <Col className=" m-5">
                 <img
                     src = {LosAngeles}
@@ -80,7 +58,7 @@ function About() {
                 ></img>
                 <p>I am a Los Angeles native</p> 
             </Col>
-            <Col className="">
+            <Col>
             <img
                 src = {MarathonImage}
                 alt = "los Angeles"
@@ -91,11 +69,43 @@ function About() {
                 ></img>
               <p>I ran a marathon at 13-years-old</p>
             </Col>
-            <Col className="blue-bk m-5">
+            {/* <Col className="blue-bk m-5">
               <p id="text">This will be the last fact!</p>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
+
+        <Container className="pb-5">
+          <Row className="center pt-5  max-width">
+            <Col className="pt-1" >
+              <p id="secondary-title-font"> when not coding : </p>
+            </Col>
+          </Row>
+
+          <Row>
+
+         
+
+
+            <Col
+              className="green-bk white-color center m-3 p-5 rounded"
+              id="text"
+            >
+              <p> I delight in </p>
+              <hr />
+              <p id="bolded-subheading"> creating, cardio, & coffee</p>
+              <hr />
+              <p id="">
+                {" "}
+                I spend my free time exploring mediums for creating art,
+                running/hiking, and sipping on a cappuccino or iced coffee{" "}
+              </p>
+            </Col>
+            </Row>
+          
+        </Container>
+
+        
 
 
           {/* Resume */}
@@ -115,12 +125,17 @@ function About() {
                 <p id="tertiary-title-font"> EXPERIENCE</p>
                 <hr/>
                 <div>
-                <p id = ''> Carte </p>
+                  <a href="/carte" className="black-color">
+                    <p> Carte </p>
+                  </a>
+                
                 <p id = 'text' className="ms-3 mt-n1 fst-italic"> Front-End Developer</p>
                 <p id = "text" className="ms-5"> 2021 - 6 months</p>
                 </div>
                <hr/>
-                <p id = ''> Walter Reed Army Institute of Research </p>
+               <a href = '/gems' className="black-color">
+                  <p> Walter Reed Army Institute of Research </p>
+               </a>
                 <p id = 'text' className="ms-3 fst-italic"> Data Analytics Intern</p>
                 <p id = "text" className="ms-5"> 2021 - 6 months</p>
                 <hr/>

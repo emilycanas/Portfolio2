@@ -4,7 +4,7 @@ import './skillsanimation.css'
 function SkillsAnimation(){
   return(
     <>
-    <section className="animation-container brown_bgcolor">
+    <section className="animation-container brown_bgcolor p-3">
       <div className="list">
         <div className="item">
    

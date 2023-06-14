@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Boat from "../assets/boat.png";
 import { AiFillLinkedin, AiFillMail } from "react-icons/ai";
-import Back from "../components/Back";
+//import Back from "../components/Back";
 import TopNav from "../components/TopNav";
 
 function Contact() {
@@ -15,15 +15,15 @@ function Contact() {
             <Col>
               <Row>
                 <Col className="col-10 ">
-                  <p id="title-font" className="footertext">
+                  <p id="title-font" className="footertext ">
                     {" "}
                     GET IN TOUCH!
                   </p>
                 </Col>
               </Row>
 
-              <p id = "heading">
-              Please feel free to reach out if you: have any questions, would like to discuss a project, or would like to grab a coffee.                </p>
+              <p id = "fourth-title-font">
+              Please feel free to reach out if you: have any questions, would like to discuss a project, or would like to grab a coffee :) </p>
 
               <Row>
             

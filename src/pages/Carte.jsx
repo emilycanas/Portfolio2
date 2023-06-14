@@ -11,7 +11,6 @@ import CarteAutocomplete from '../assets/carte_autocomplete.svg'
 import Specials from '../assets/carte_specials.svg'
 import CarteValidation from '../assets/carte_validation.svg'
 import CarteToastr from '../assets/carte_toastr.svg'
-//import {SiMicrosoftsqlserver} from 'react-icons/si'
 import {
     SiMicrosoftsqlserver,
     SiReact,
@@ -21,6 +20,8 @@ import {
     SiCss3,
     SiJavascript,
   } from "react-icons/si";
+
+
 function Carte(){
     return(
         <>
@@ -47,16 +48,18 @@ function Carte(){
 
         <Row className="center mt-5 max-width"> 
             <Col><p>Year</p></Col>
-            <Col><p>Location</p> </Col>
+            <Col><p>Type</p></Col>
+            {/* <Col><p>Location</p> </Col> */}
             <Col><p>Role</p> </Col>
         </Row>
         <Row className="blue-bk white-color center mb-5 pt-3 max-width">
             <Col>  <p> 2022</p> </Col>
-            <Col>  <p>Remote, based in CA</p> </Col>
+            <Col><p>MVP Development</p></Col>
+            {/* <Col>  <p>Remote, based in CA</p> </Col> */}
             <Col>  <p>FrontEnd Specialist</p> </Col>
         </Row>
 
-        <Row className="justify-content-end max-width m5-5 pt-5"> 
+        <Row className="justify-content-end max-width"> 
             <div className="col-4">
                 <img
                 src = {Graphic}
@@ -68,16 +71,16 @@ function Carte(){
             </div>
         </Row>
         <Container>
-            <Row>
+            {/* <Row>
                 <Col className="col-8">
-                    <p id = 'secondary-title-font'> The Challenge</p>
+                    <p id = 'tertiary-title-font'> The Challenge:</p>
                 </Col>
-                <p className="ms-5"> To spearhead the development of Carte's Minimum Viable Product (MVP) </p>
+                <p className="ms-1"> To spearhead the development of Carte's Minimum Viable Product(MVP) </p>
 
             </Row>
-            
+             */}
             <Row className="ms-5 mt-5">
-                <p className="ms-5" id = 'secondary-title-font'> My Task </p>
+                <p className="ms-5" id = 'secondary-title-font'> My Task: </p>
                 
             </Row>
             <Row className="justify-content-end">
@@ -173,38 +176,42 @@ function Carte(){
          </Row>
         </Container>
        
-        <Container>
-            <p ><b>more implemented features</b></p> 
-            <Row>
-                    <Col className="col-4 center p-5">
+        <Container className="mt-5">
+            <p className="center"><b>more implemented features:</b></p>
+            <Row className=" mt-5">
+                <Col className="col-6 align-self-end center ">
                         <p> Form data validation</p>
-                    </Col>
-                    <Col className="col-5">
+                </Col>
+                <Col className=" align-self-end center ">
+                    <p>Real-time feedback </p>
+                </Col>
+            </Row>
+
+            <Row className="center">
+            <Col className="col-6">
                     <img
                             src={CarteValidation}
                             alt = 'Carte Autocomplete'
-                            height= '100%'
-                            width='100%'
+                            height= '80%'
+                            width='80%'
                             loading = 'lazy'
                         >
                         </img>
                     </Col>
-                </Row>
-                <Row>
-                    <Col className="center p-5">
-                        <p>Real-time feedback as users interact with product</p>
-                    </Col>
-                    <Col className="col-5">
+
+                    <Col className="col-6">
                     <img
                             src={CarteToastr}
                             alt = 'Carte Autocomplete'
-                            height= '100%'
-                            width='100%'
+                            height= '80%'
+                            width='80%'
                             loading = 'lazy'
                         >
                         </img>
                     </Col>
-                </Row>
+
+            </Row>
+            
            
             <p id = 'secondary-title-font' className="text-center mt-5">Back End</p> 
             <p className="text-center p-5 m-5">
@@ -231,7 +238,7 @@ function Carte(){
             <p id = 'secondary-title-font' className="text-center mt-5">Libraries</p>
             
             <Row className="justify-content-center p-5">
-                <p className="text-center p-5 col-6">
+                <p className="text-center col-6">
                     axios, formix, yup, bootstrap , proptypes, toastr, sweetalers, react-google-maps, rc-pagination, react-router-dom
                 </p>
 

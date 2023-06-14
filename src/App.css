@@ -62,8 +62,8 @@ p{
   font-size: calc(2rem + 2vw);
   font-family: brownsugar;
   /* font-weight: bold; */
-  font-weight: 550;
-  letter-spacing: 0.2em;
+  /* font-weight: 550; */
+  letter-spacing: 0.1em;
 }
 
 #fourth-title-font{
@@ -71,7 +71,7 @@ p{
   font-family: initial;
   /* font-weight: bold; */
   /* font-weight: 550; */
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 
 }
 
@@ -159,10 +159,9 @@ p{
   background-color: #987716;
 }
 
-
-
-
-
+a {
+  text-decoration: none !important;
+}
 
 
 @media only screen and (max-width: 577px){
