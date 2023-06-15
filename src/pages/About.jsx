@@ -12,7 +12,7 @@ import SmallFooter from "../components/SmallFooter";
 function About() {
   return (
     <>
-      <div className="bg_color">
+      <div className="bg_color width = 100%">
         <TopNav></TopNav>
 
         <div className="center mt-5">
@@ -109,7 +109,7 @@ function About() {
 
 
           {/* Resume */}
-          <Container className=" mb-5 ">
+          <Container className=" mb-5 " width = '100%'>
             <Row>
               <Col className="col-6">
                 <img
@@ -121,8 +121,12 @@ function About() {
                   loading = 'lazy'
                 />
               </Col>
-              <Col className="bg_color p-5 col-6">
-                <p id="tertiary-title-font"> EXPERIENCE</p>
+              <Col className="col-6  max-width">
+         
+                  <p id="fourth-title-font"> EXPERIENCE</p>
+
+      
+                
                 <hr/>
                 <div>
                   <a href="/carte" className="black-color">

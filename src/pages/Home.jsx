@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.css'
-import {Row, Col, Container, Button} from 'react-bootstrap'
+import {Row, Col, Container} from 'react-bootstrap'
 import Bird from '../assets/bird.jpg'
 import Dots from '../assets/dots.png'
 import TopNav from '../components/TopNav'
@@ -95,42 +95,44 @@ function Home(){
         
 
         {/* Carte */}
-        <Container >
+        <Container className='pt-5 pb-5' >
             <Row>
-            <Col className='col-3 pt-5'>
+            <Col className='col-3'>
                     <p id='secondary-title-font'>SELECTED WORKS</p>
                 </Col>
 
             </Row>
-            <Row>
-                <Col>
-                </Col>
-                
+            <Row className='justify-content-end'>    
                 <Col className='col-8'>
-                         <img
-                            src = {CarteFood}
-                            alt = "Carte Back"
-                            height = "100%"
-                            width= '100%'
-                            loading = 'lazy'
-                            
-                        />
-                    <div className='floatright'>
-                            <p> 2022 - A digital menu and ordering platform</p>
-                            
-                            <Link
-                                to = '/carte' className = 'floatright '> 
-                                <Button className='floatright ecbutton'>Learn More</Button> 
-                            </Link>
-                        </div>
+                    <img
+                    src = {CarteFood}
+                    alt = "Carte Back"
+                    height = "100%"
+                    width= '100%'
+                    loading = 'lazy' 
+                    /> 
                 </Col>   
             </Row>
+            <Row className='justify-content-end'>
+                <Col className='col-8'>
+                    <p> 2022 - A digital menu and ordering platform</p>
+
+                    <div className='justify-content-end text-right align-self-start'>
+                        
+                       
+                    </div>
+                </Col>
+            </Row>
+
+            <div className='d-flex align-items-end flex-column'>          
+                <a className='btn btn-lg floatright ecbutton' href = '/carte' role = 'button'> Learn More</a>
+            </div>
         </Container>
 
         {/* Wrair */}
-        <Container>
-            <Row className='padding'>
-                <Col className='col-8'>
+        <Container className='pb-5'>
+            <Row>
+                <Col className='col-9'>
                     <div>
                         <img
                             src = {Gems}
@@ -142,10 +144,7 @@ function Home(){
                             />
                         <div className='floatright'>
                             <p> 2021 - Data Analysis</p>
-                            <Link
-                                to = '/gems' className = 'floatright '> 
-                                <Button className='floatright ecbutton'>Learn More</Button> 
-                            </Link>
+                            <a className='btn btn-lg floatright ecbutton' href = '/gems' role = 'button'> Learn More</a>
                              
                         </div>
                     </div>

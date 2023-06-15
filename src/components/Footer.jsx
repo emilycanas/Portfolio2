@@ -18,26 +18,19 @@ function Footer(){
                         </Col>
                     </Row>
 
-                    <Row className=' white-color '>
-                  
+                    <Row>
                         <Col>
-                            <div className="grid-container">
-                                <a 
-                                    href = "mailto:emilycanasdev@gmail.com"> 
-                                    <p className="black-color"><AiFillMail/> </p> 
-                                </a>
-                                <p>emilycanasdev@gmail.com</p> 
-                            </div>
-                            <div className="grid-container">
+                            <a 
+                                href = "mailto:emilycanasdev@gmail.com"> 
+                                <p className="black-color"><AiFillMail/> emilycanasdev@gmail.com </p> 
+                            </a>
+                            
                             <a
                             target="_blank" 
                             rel="noopener noreferrer" 
                             href="https://www.linkedin.com/in/emily-canas/"
-                            >
-                                <p className="black-color"><AiFillLinkedin/></p>
-                            </a>
-                            <p>linkedin.com/in/emily-canas/</p>     
-                            </div>                    
+                            ><p className="black-color"><AiFillLinkedin/> /in/emily-canas/</p>    
+                            </a>                   
                         </Col>
                     </Row>   
                 </Col>

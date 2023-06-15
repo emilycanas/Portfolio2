@@ -25,9 +25,9 @@ import {
 function Carte(){
     return(
         <>
-        <div className="bg_color" width = '100%'>
+        
+        <div className="bg_color">
         <TopNav/>
-
         <Container>
             <Row>
                 <Col>
@@ -79,10 +79,13 @@ function Carte(){
 
             </Row>
              */}
-            <Row className="ms-5 mt-5">
-                <p className="ms-5" id = 'secondary-title-font'> My Task: </p>
-                
-            </Row>
+             <Container>
+                <Row className=" ms-5 mt-5">
+                    <p id = 'secondary-title-font'> My Task: </p>
+                    
+                </Row>
+            </Container>
+
             <Row className="justify-content-end">
             <Col className=" col-8">
                     <p> Assumed responsibility for the seamless integration and management of location-based functionality.</p>
@@ -232,7 +235,16 @@ function Carte(){
                 <Col><p id = 'tertiary-title-font'><SiJavascript/></p></Col>
                 <Col><p id = 'tertiary-title-font'><SiHtml5/></p></Col>
                 <Col><p id = 'tertiary-title-font'><SiCss3/></p></Col>
-                <Col><p id = 'tertiary-title-font'><SiGithub/></p></Col> 
+                {/* <Col><p id = 'tertiary-title-font'><SiGithub/></p></Col>  */}
+                <Col>
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/emilycanas/Carte"
+                        > <p id = 'tertiary-title-font'><SiGithub/></p>
+                    
+                    </a>
+                </Col>
 
             </Row>
             <p id = 'secondary-title-font' className="text-center mt-5">Libraries</p>
@@ -243,14 +255,7 @@ function Carte(){
                 </p>
 
             </Row>
-           
-
-
         </Container>
-
-       
-
-        
         <Footer/>
         </div>
         </>

@@ -22,8 +22,8 @@ function Gems() {
         <hr />
       </Container>
 
-      <Container >
-        <Row className="">
+      <Container>
+        <Row >
           <Col className="col-10 ">   
             <p className="ms-3" id="fourth-title-font">
               Role:
@@ -37,7 +37,11 @@ function Gems() {
             </Col>
         </Row>
 
-        <Row className="pt-5">
+        
+
+        <Row className="pt-5 max-width">
+          <Col>
+         
             <p id='fourth-title-font'>Data Analysis</p>
 
 
@@ -71,7 +75,7 @@ function Gems() {
               encompassed data
             </p>
             <hr />
-          
+            </Col>
         </Row>
       
       </Container>

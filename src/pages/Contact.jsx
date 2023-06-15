@@ -10,26 +10,21 @@ function Contact() {
     <>
     <TopNav></TopNav>
       <div className="brown_bgcolor pt-5 mt-5 pb-5">
+       
         <Container>
-          <Row className="center2">
-            <Col>
-              <Row>
-                <Col className="col-10 ">
-                  <p id="title-font" className="footertext ">
+          <Row className=" ">
+            <Col className="col-12 col-sm-6 align-self-center" >
+              <p id="secondary-title-font">
                     {" "}
-                    GET IN TOUCH!
-                  </p>
-                </Col>
-              </Row>
+                    Let's connect!
+              </p>
 
-              <p id = "fourth-title-font">
-              Please feel free to reach out if you: have any questions, would like to discuss a project, or would like to grab a coffee :) </p>
+              <p >
+                Please feel free to reach out if you: have any questions, would like to discuss a project, or would like to grab a coffee :) 
+              </p>
 
-              <Row>
-            
-                <Col>
-                  <a href="mailto:emilycanasdev@gmail.com" className="white-color">
-                    <p id = "subheading">
+              <a href="mailto:emilycanasdev@gmail.com" className="white-color mt-5">
+                    <p >
                       <AiFillMail /> emilycanasdev@gmail.com
                     </p>
                   </a>
@@ -40,26 +35,20 @@ function Contact() {
                     href="https://www.linkedin.com/in/emily-canas/"
                     className="white-color"
                   >
-                    <p id = 'subheading'>
+                    <p >
                       <AiFillLinkedin /> /in/emily-canas/
                     </p>
                   </a>
-                </Col>
-              </Row>
             </Col>
+
             <Col>
-              <img src={Boat} alt="GetInTouch" height="100%" width="100%" loading = 'lazy' />
+              <img src={Boat} alt="GetInTouch" height="100%" width="100%" loading = 'lazy' id = 'sm-screen'/>
             </Col>
           </Row>
         </Container>
         
       </div>
-     
-      {/* <div className="green-bk invisible-text mt-5">
-        <p>
-        this is a square
-        </p>
-      </div> */} 
+
     </>
   );
 }
