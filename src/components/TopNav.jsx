@@ -6,10 +6,13 @@ import Nav from "react-bootstrap/Nav";
 import "./topnav.css";
 //import purplelogo from '../assets/purplelogotransparent.png'
 import World from '../assets/world.png'
+import { useLocation } from "react-router-dom";
 function TopNav(){
+  const location = useLocation()
+
     return(
         <>
-          <div className="">
+          <div className="bg_color">
             <img
             src = {World}
             alt = "worldimg"
@@ -39,16 +42,34 @@ function TopNav(){
               
                 <Nav className="me-auto navlink">
                   <Nav.Link href="/">
-                    <p> home |</p>
+
+                    {location.pathname === '/' ? 
+                    <div>
+                      <p className="white-color float-start"> home </p>
+                      <p className="float-end ms-3"> | </p>
+                    </div>
+                    
+                     :  <p> home | </p>}
                   </Nav.Link>
                   <Nav.Link href="/about">
-                    <p> about |</p>
+
+                  {location.pathname === '/about' ? 
+                  <div>
+                    <p className="white-color float-start"> about </p>
+                    <p className="float-end ms-3"> | </p>
+                  </div>
+                  
+                   :  <p>about | </p>}
+                    
                   </Nav.Link>
+             
                   {/* <Nav.Link href = "/resume">
                     Resume
                   </Nav.Link> */}
                   <Nav.Link href="/contact">
-                   <p> contact </p>
+                  {location.pathname === '/contact' ? <p className="white-color "> contact </p> :  <p>contact</p>}
+
+                   {/* <p> contact </p> */}
                   </Nav.Link>
                 </Nav>
               </Col>

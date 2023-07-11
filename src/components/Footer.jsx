@@ -1,6 +1,6 @@
 import React from "react";
 import { Container,Row,Col } from "react-bootstrap";
-import Boat from '../assets/boat.png'
+import Boat from '../assets/boat_compressed.jpg'
 import {AiFillLinkedin, AiFillMail} from 'react-icons/ai'
 
 

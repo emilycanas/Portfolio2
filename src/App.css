@@ -47,7 +47,8 @@
 html{ font-size: 12px;}
 p{
   font-size: calc(1rem + 1vw);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.1em;
 }
 
 #title-font{
@@ -77,7 +78,7 @@ p{
 
 #bsheading{
   font-size: calc(1.5rem + 1.5vw);
-  font-family: brownsugar;
+  /* font-family: brownsugar; */
   letter-spacing: 0.3em;
 }
 #heading{
@@ -159,6 +160,13 @@ p{
   background-color: #987716;
 }
 
+.custom-container{
+  /* height: auto; */
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -176,19 +184,16 @@ a {
 }
 
 
-
-
-
 /* animated scroll css  */
 
 body {
   animation: body 1s linear;
 }
-@keyframes body {
+/* @keyframes body {
   to {
     background-color: black;
   }
-}
+} */
 
 .progress {
   height: 0.5px;

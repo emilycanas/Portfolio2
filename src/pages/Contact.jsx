@@ -1,14 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Boat from "../assets/boat.png";
+import Boat from "../assets/boat_compressed.jpg";
 import { AiFillLinkedin, AiFillMail } from "react-icons/ai";
 //import Back from "../components/Back";
-import TopNav from "../components/TopNav";
 
 function Contact() {
   return (
     <>
-    <TopNav></TopNav>
+  
       <div className="brown_bgcolor pt-5 mt-5 pb-5">
        
         <Container>

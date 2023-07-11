@@ -43,7 +43,7 @@
     border-radius: 50px;
     background-color: #1F79A6;
     color: white;
-
+    /* padding: 5%; */
 }
 
 .blue_bgcolor{
@@ -95,16 +95,7 @@
     align-items: center;
 }
 
-.bellezafont{
-    font-family: "Belleza";
-}
 
-.italianafont{
-    font-family: "Italiana";
-    /* font-size:xx-large; */
-    display:flex;
-    /* font-weight:bold; */
-}
 body{
     font-family: "Belleza";
 }
@@ -115,24 +106,9 @@ body{
 
 
 
-.custom-container{
-    /* width: 100%;
-    height: auto; */
-    display: inline-block;
-    position: relative;
-    width: 100%;
 
-
-}
 .burnt-brown{
     background-color: #987716;
-}
-
-.birdimg{
-    border-radius: 10px;
-    /* max-height: 500px; */
-    /* max-width: 450px; */
- 
 }
 .card {
     position: relative;

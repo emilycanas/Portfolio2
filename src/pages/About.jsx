@@ -1,26 +1,21 @@
 import React from "react";
-import TopNav from "../components/TopNav";
-//import Footer from "../components/Footer";
 import { Row, Col, Container } from "react-bootstrap";
-import Headshot from "../assets/color_headshot.png";
-import CodingImg from '../assets/coding_bg.png'
+import Headshot from "../assets/headshot_compressed.jpg";
+import CodingImg from '../assets/coding_bg_compressed.jpg'
 import { MdWavingHand } from "react-icons/md";
-import LosAngeles from '../assets/LosAngeles.jpg'
-import MarathonImage from '../assets/marathon.png'
-import SmallFooter from "../components/SmallFooter";
+import LosAngeles from '../assets/LosAngeles_compressed.jpg'
+import MarathonImage from '../assets/marathon_compressed.jpg'
 
 function About() {
   return (
     <>
       <div className="bg_color width = 100%">
-        <TopNav></TopNav>
 
-        <div className="center mt-5">
+        <div className="center pt-5">
           <p id="title-font"> Emily Canas</p>
-     
         </div>
 
-        <Container className="mb-1">
+        <Container>
           <Row className=" max-width  center-in-page">
             <Col className="p-5 col-8">
               <p>{" "}<b>Hi there! <MdWavingHand /></b>{" "}</p>
@@ -42,12 +37,11 @@ function About() {
 
 
         <Container>
-          <Row className="center-in-page pt-5 max-width">
-            {/* <p className="fw-bold"> fun facts:</p> */}
-            <p id = 'secondary-title-font'> fun facts:</p>
-          </Row>
-          <Row className="center center-in-page pb-3 m-2 max-width ">
-            <Col className=" m-5">
+          <Row className="center center-in-page max-width ">
+            <Col className="col-3">
+              <p className = 'fw-bold'> fun facts:</p>
+            </Col>
+            <Col className="m-5">
                 <img
                     src = {LosAngeles}
                     alt = "los Angeles"
@@ -75,18 +69,14 @@ function About() {
           </Row>
         </Container>
 
-        <Container className="pb-5">
-          <Row className="center pt-5  max-width">
+        <Container className="pt-5">
+          <Row className="center  max-width">
             <Col className="pt-1" >
-              <p id="secondary-title-font"> when not coding : </p>
+              <p className = 'fw-bold'> when not coding: </p>
             </Col>
           </Row>
 
           <Row>
-
-         
-
-
             <Col
               className="green-bk white-color center m-3 p-5 rounded"
               id="text"
@@ -109,7 +99,7 @@ function About() {
 
 
           {/* Resume */}
-          <Container className=" mb-5 " width = '100%'>
+          <Container className=" pb-5 pt-5 " width = '100%'>
             <Row>
               <Col className="col-6">
                 <img
@@ -121,7 +111,7 @@ function About() {
                   loading = 'lazy'
                 />
               </Col>
-              <Col className="col-6  max-width">
+              <Col className="col-6 max-width">
          
                   <p id="fourth-title-font"> EXPERIENCE</p>
 
@@ -151,8 +141,7 @@ function About() {
              
             </Row>
           </Container>
-        {/* <Footer></Footer> */}
-        <SmallFooter></SmallFooter>
+
       </div>
     </>
   );

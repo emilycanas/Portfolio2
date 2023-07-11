@@ -1,18 +1,16 @@
 import React from "react";
-import TopNav from "../components/TopNav";
 import "./gems.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { SiMicrosoftexcel, SiMicrosoftword, SiCanva } from "react-icons/si";
-import SmallFooter from "../components/SmallFooter";
 
 function Gems() { 
    return (
     <React.Fragment>
       <div className="bg_color">
-      <TopNav/>
-      <p className=" pt-5 m-3 center" id = 'secondary-title-font'>Gains in the Education of Mathematics & Science</p>
+
+      <p className=" pt-5  center" id = 'fourth-title-font'>Gains in the Education of Mathematics & Science</p>
       
-      <Container className="mt-3">
+      <Container className="pt-2">
         <hr />
         <Row className="center">
           <Col><h1><SiMicrosoftexcel /></h1></Col>
@@ -22,10 +20,10 @@ function Gems() {
         <hr />
       </Container>
 
-      <Container>
-        <Row >
-          <Col className="col-10 ">   
-            <p className="ms-3" id="fourth-title-font">
+      <Container className="pt-5">
+        <Row className="pb-5">
+          <Col className="col ">   
+            <p className="" id="fourth-title-font">
               Role:
                </p>
             <p className="ms-5 " id="text">
@@ -36,10 +34,12 @@ function Gems() {
             </p>
             </Col>
         </Row>
+        <hr/>
 
         
 
-        <Row className="pt-5 max-width">
+        <Row className="pt-5 pb-5 max-width">
+          
           <Col>
          
             <p id='fourth-title-font'>Data Analysis</p>
@@ -74,17 +74,20 @@ function Gems() {
               (3) Two primary codes and nine secondary codes established that
               encompassed data
             </p>
-            <hr />
+            
             </Col>
         </Row>
+
+        <hr />
       
       </Container>
       
       <Container>
+
           <Row className="pt-5">
             <Col> 
-              <p className = "bold medletter" id = 'fourth-title-font'>
-                <b> Publication </b>  
+              <p id = 'fourth-title-font'>
+                Publication   
               </p>
               <p className="ms-3" id = 'text'> 
                   Presented data analysis and research findings to WRAIR's Science Education Team
@@ -96,7 +99,7 @@ function Gems() {
           </Row>
     
           
-          <Row className="justify-content-end">
+          <Row className="justify-content-end pb-5">
             <Col className="align-self-end">
               <a
                 
@@ -111,8 +114,8 @@ function Gems() {
 
           <hr/>
           <Row>
-            <p className = "center" id = 'heading'>
-              <b>Award</b>
+            <p className = "center pt-5" id = 'heading'>
+             Award
             </p>
           </Row>
           <Row className="pb-5 ps-5 pe-5">
@@ -128,7 +131,7 @@ function Gems() {
   
           </Row>
       </Container>
-      <SmallFooter/>
+     
       </div>
     </React.Fragment>
   );

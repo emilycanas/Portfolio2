@@ -1,6 +1,4 @@
 import React from "react";
-import TopNav from "../components/TopNav";
-import Footer from "../components/Footer";
 import { Container, Row, Col } from "react-bootstrap";
 import WebBorder from '../assets/webbrowser_border.png'
 import Graphic from '../assets/carte_graphic.png'
@@ -27,8 +25,7 @@ function Carte(){
         <>
         
         <div className="bg_color">
-        <TopNav/>
-        <Container>
+        <Container className="pt-5 max-width">
             <Row>
                 <Col>
                     <p id = 'title-font'> Carte</p>
@@ -46,20 +43,24 @@ function Carte(){
             </Row>
         </Container>
 
-        <Row className="center mt-5 max-width"> 
-            <Col><p>Year</p></Col>
-            <Col><p>Type</p></Col>
-            {/* <Col><p>Location</p> </Col> */}
-            <Col><p>Role</p> </Col>
-        </Row>
-        <Row className="blue-bk white-color center mb-5 pt-3 max-width">
-            <Col>  <p> 2022</p> </Col>
-            <Col><p>MVP Development</p></Col>
-            {/* <Col>  <p>Remote, based in CA</p> </Col> */}
-            <Col>  <p>FrontEnd Specialist</p> </Col>
-        </Row>
+     
+            <div className="center pt-5 ">
+            <Row className="max-width"> 
+                <Col><p>Year</p></Col>
+                <Col><p>Type</p></Col>
+                {/* <Col><p>Location</p> </Col> */}
+                <Col><p>Role</p> </Col>
+            </Row>
+            <Row className="blue-bk white-color  pt-3 max-width">
+                <Col>  <p> 2022</p> </Col>
+                <Col><p>MVP Development</p></Col>
+                {/* <Col>  <p>Remote, based in CA</p> </Col> */}
+                <Col>  <p>Front End Specialist</p> </Col>
+            </Row>
+            </div>
+     
 
-        <Row className="justify-content-end max-width"> 
+        <Row className="justify-content-end max-width pt-5"> 
             <div className="col-4">
                 <img
                 src = {Graphic}
@@ -80,7 +81,7 @@ function Carte(){
             </Row>
              */}
              <Container>
-                <Row className=" ms-5 mt-5">
+                <Row className=" ms-5 pt-5">
                     <p id = 'secondary-title-font'> My Task: </p>
                     
                 </Row>
@@ -95,7 +96,7 @@ function Carte(){
        
        {/* Add higher resoultion images to these */}
         {/* <Container className="mt-5 mb-5"> */}
-            <Row className="center mt-5 mb-2 max-width">
+            <Row className="center pt-5 max-width">
                 <Col className="col-4">
                 <img
                 src = {Phone1}
@@ -130,11 +131,11 @@ function Carte(){
             </Row>
         {/* </Container> */}
         
-        <Container>
+        <Container className="pt-5">
             <Row className="center">
                 <p id="secondary-title-font"> Front End</p>
             </Row>
-            <Row className="center">
+            <Row className="center pt-3">
                 <Col className="col-7">
                     <img
                         src={CarteAutocomplete}
@@ -150,7 +151,7 @@ function Carte(){
                     <b> location autocomplete capabilities</b>. </p>
                 </Col>
             </Row>
-            <Row className="mt-5">
+            <Row className="pt-5">
                 <p><b>advantages</b></p>
                 <Col className="col-1 justify-content-end text-end" >
                     <p> · </p>
@@ -166,7 +167,7 @@ function Carte(){
 
             <Row>
             <Col></Col>
-            <Col className="col-8 text-end">
+            <Col className="col-8 text-end pt-3">
                 <img
                         src={Specials}
                         alt = 'Carte Autocomplete'
@@ -179,9 +180,9 @@ function Carte(){
          </Row>
         </Container>
        
-        <Container className="mt-5">
+        <Container className="pt-5">
             <p className="center"><b>more implemented features:</b></p>
-            <Row className=" mt-5">
+            <Row className=" pt-5">
                 <Col className="col-6 align-self-end center ">
                         <p> Form data validation</p>
                 </Col>
@@ -216,22 +217,23 @@ function Carte(){
             </Row>
             
            
-            <p id = 'secondary-title-font' className="text-center mt-5">Back End</p> 
-            <p className="text-center p-5 m-5">
+            <p id = 'secondary-title-font' className="text-center pt-5">Back End</p> 
+            <p className="text-center p-5">
             Created tables, diagrams, and programmability in a relational database. Also created API endpoints which connected frontend functionality to the backend
             </p>
         </Container>
+        <p id = 'secondary-title-font' className="text-center">Technologies</p>
+
 
         <Container>
-        <p id = 'secondary-title-font' className="text-center">Technologies</p>
   
-            <Row className="p-5 text-center">
+            <Row className=" ps-5 pe-5 pt-3 text-center">
                 <Col><p id = 'tertiary-title-font'><SiMicrosoftsqlserver/></p></Col>
                 <Col><p id = 'tertiary-title-font'><SiReact/></p></Col>
                 <Col><p id = 'tertiary-title-font'><SiDotnet/></p></Col>
                  
             </Row> 
-            <Row className="p-5 text-center">
+            <Row className=" ps-5 pe-5 pt-3 text-center">
                 <Col><p id = 'tertiary-title-font'><SiJavascript/></p></Col>
                 <Col><p id = 'tertiary-title-font'><SiHtml5/></p></Col>
                 <Col><p id = 'tertiary-title-font'><SiCss3/></p></Col>
@@ -247,16 +249,15 @@ function Carte(){
                 </Col>
 
             </Row>
-            <p id = 'secondary-title-font' className="text-center mt-5">Libraries</p>
+            <p id = 'secondary-title-font' className="text-center pt-5">Libraries</p>
             
-            <Row className="justify-content-center p-5">
+            <Row className="justify-content-center ps-5 pe-5 pb-5 pt-3">
                 <p className="text-center col-6">
                     axios, formix, yup, bootstrap , proptypes, toastr, sweetalers, react-google-maps, rc-pagination, react-router-dom
                 </p>
 
             </Row>
         </Container>
-        <Footer/>
         </div>
         </>
     )
