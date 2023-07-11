@@ -148,7 +148,7 @@ p{
   grid-gap: 1%;
 }
 .bg_color{
-  background-color: #EDECED;
+  /* background-color: #EDECED; */
 }
 .center{
   align-items: center;
