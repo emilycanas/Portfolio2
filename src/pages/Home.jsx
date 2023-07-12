@@ -2,58 +2,57 @@ import React from 'react'
 import './home.css'
 import {Row, Col, Container} from 'react-bootstrap'
 import Bird from '../assets/birdcompressed.jpg'
-//import Dots from '../assets/dots.png'
-import Headshot from '../assets/headshot_compressed.jpg'
 import CarteFood from '../assets/carte_food_compressed.jpg'
 import Gems from '../assets/gems_logo_compressed.jpg'
-//import SkillsAnimation from '../components/animations/SkillsAnimation'
-import { Link } from 'react-router-dom'
+import SkillsAnimation from '../components/animations/SkillsAnimation'
+
+//import Dots from '../assets/dots.png'
+//import Headshot from '../assets/headshot_compressed.jpg'
+//import { Link } from 'react-router-dom'
+//import { MdOutlineComputer } from "react-icons/md";
+//import { VscLocation } from "react-icons/vsc";
 
 function Home(){
     return(
     <>
     
-    <div className = "bg_color">        
+    <div className = "bg_color container pt-5">        
         {/* First Page */}
-        <div className='custom-container' >
-      
-        <Row className='max-height max-width' >
-            <Col className='col-4.5 col-sm-5'>
-                <img
-                    src = {Bird}
-                    alt = "bird"
-                    height = "100%"
-                    width = "100%"
-                    className='birdimg'
-                    loading = 'lazy'
-                ></img>
-            </Col>
-            <Col className='col-7.5 col-sm-5 pt-5'>
-              
-                    <p  id='title-font' className=''>Emily Canas</p> 
-                
-                    <p className=' bd-highlight '> Front End Developer</p>
-                    <p className='bd-highlight'>Rotterdam, Netherlands</p>
-               
-            </Col>
-            {/* <Col className='col-sm-2' id = 'sm-screen'>
-                <img
-                    src = {Dots}
-                    alt = "dots"
-                    height = "100%"
-                    width = "100%"
-                    className='birdimg'
-                    loading = 'lazy'
-                ></img>
-            </Col> */}
-        </Row>
-        </div>
-        <hr id='add-sm-screen'/>
-       
-     
 
+        <div>
+            <Row className='max-height max-width pb-5' >
+                <Col className='col-4.5 col-sm-6'>
+                    <img
+                        src = {Bird}
+                        alt = "bird"
+                        height = "100%"
+                        width = "100%"
+                        className='birdimg'
+                        loading = 'lazy'
+                    ></img>
+                </Col>
+                <Col className='col-7.5 col-sm-6 pt-5'>
+                        <p  id='title-font' className=''>Emily Canas</p> 
+                        <p className=' bd-highlight '> Front End Developer</p>
+                        <p className='bd-highlight'>Rotterdam, Netherlands</p>   
+                </Col>
+                {/* <Col className='col-sm-1.5' id = 'sm-screen'>
+                        <img
+                            src = {Dots}
+                            alt = "dots"
+                            height = "100%"
+                            width = "100%"
+                            className='birdimg emilyrow'
+                            loading = 'lazy'
+                        ></img>   
+                </Col> */}
+            </Row>
+
+            <hr/>
+        </div>
+       
         {/* About Me */}
-        <div className='container pt-5'>
+        {/* <div className='container pt-5'>
           
             <Row className= ' center max-height max-width row'>
                 <Col className='col-lg-8 col-sm-12 col-md-7 col-12 order-sm-2 order-lg-1 order-md-1 order-2'>
@@ -77,18 +76,19 @@ function Home(){
                     ></img>
                 </Col>
             </Row>
-        </div>
-        
-        {/* <div className='pt-5'>
-            <SkillsAnimation></SkillsAnimation>
         </div> */}
         
+        <div className='pt-5 pb-5'>
+            <SkillsAnimation></SkillsAnimation>
+        </div>
+        
+        <hr/>
 
         {/* Carte */}
         <Container className='pt-5' >
             <Row>
-            <Col className='col-3'>
-                    <p id='secondary-title-font'>SELECTED WORKS</p>
+            <Col className='col-12 center'>
+                    <p id='secondary-title-font'>Selected Works</p>
                 </Col>
 
             </Row>

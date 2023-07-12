@@ -15,11 +15,11 @@ function TopNav(){
           <div className="bg_color">
             <img
             src = {World}
-            alt = "worldimg"
+            alt = "World Img"
             width = '100%'
             // height='100%'
             className="worldimg"
-            loading = 'lazy'
+            // loading = 'lazy'
             >
             </img>
             <Navbar  width = '100%' className="navbar-custom" >

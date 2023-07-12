@@ -44,6 +44,7 @@
   font-weight: 100;
 }
 
+
 html{ font-size: 12px;}
 p{
   font-size: calc(1rem + 1vw);
@@ -148,7 +149,7 @@ p{
   grid-gap: 1%;
 }
 .bg_color{
-  /* background-color: #EDECED; */
+  background-color: #EDECED;
 }
 .center{
   align-items: center;
