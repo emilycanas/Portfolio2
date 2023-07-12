@@ -85,15 +85,17 @@ function Home(){
         <hr/>
 
         {/* Carte */}
-        <Container className='pt-5' >
+        <Container className='pt-5'>
             <Row>
-            <Col className='col-12 center'>
+                <Col className='col-12 center'>
                     <p id='secondary-title-font'>Selected Works</p>
                 </Col>
-
             </Row>
+        </Container>
+        <Container className='pt-5 pb-5' >
+            
             <Row className='justify-content-end pt-3'>    
-                <Col className='col-8'>
+                <Col className='col-9 col-sm-8 col-lg-6'>
                     <img
                     src = {CarteFood}
                     alt = "Carte Back"
@@ -104,13 +106,8 @@ function Home(){
                 </Col>   
             </Row>
             <Row className='justify-content-end'>
-                <Col className='col-8'>
+                <Col className='col-9 col-sm-8 col-lg-6'>
                     <p> 2022 - A digital menu and ordering platform</p>
-
-                    <div className='justify-content-end text-right align-self-start'>
-                        
-                       
-                    </div>
                 </Col>
             </Row>
 
@@ -122,7 +119,7 @@ function Home(){
         {/* Wrair */}
         <Container className='pt-5 pb-5'>
             <Row>
-                <Col className='col-9'>
+                <Col className='col-8 col-sm-7 col-lg-6'>
                     <div>
                         <img
                             src = {Gems}
@@ -135,8 +132,6 @@ function Home(){
                         <div className='floatright'>
                             <p> 2021 - Data Analysis</p>
                             <a className='btn btn-primary btn-lg ecbutton floatright' href = '/gems' role = 'button'> Learn More</a>
-
-                           
                              
                         </div>
                     </div>
@@ -144,7 +139,7 @@ function Home(){
             </Row>
           
         </Container>
-        {/* <hr/> */}
+        <hr className='pb-5'/>
 
     {/* Contact */}
    

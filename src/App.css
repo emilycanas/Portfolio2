@@ -52,6 +52,12 @@ p{
   letter-spacing: 0.1em;
 }
 
+#small-text{
+  font-size: calc(0.75rem + 0.75vw);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.1em;
+}
+
 #title-font{
   font-size: calc(4rem + 4vw);
   font-family: brownsugar;

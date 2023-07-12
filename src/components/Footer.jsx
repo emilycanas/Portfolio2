@@ -22,14 +22,14 @@ function Footer(){
                         <Col>
                             <a 
                                 href = "mailto:emilycanasdev@gmail.com"> 
-                                <p className="black-color"><AiFillMail/> emilycanasdev@gmail.com </p> 
+                                <p id = 'small-text' className="black-color"><AiFillMail/> emilycanasdev@gmail.com </p> 
                             </a>
                             
                             <a
                             target="_blank" 
                             rel="noopener noreferrer" 
                             href="https://www.linkedin.com/in/emily-canas/"
-                            ><p className="black-color"><AiFillLinkedin/> /in/emily-canas/</p>    
+                            ><p id = 'small-text' className="black-color"><AiFillLinkedin/> /in/emily-canas/</p>    
                             </a>                   
                         </Col>
                     </Row>   
